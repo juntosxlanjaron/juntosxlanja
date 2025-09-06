@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería con Texto</title>
+  <style>
+    /* Fuente agradable y legible */
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Contenedor general */
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    /* Imagen principal y final (más grandes y con pie de foto) */
+    .full-image {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .full-image img {
+      width: 90%;
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .caption {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    /* Imagen + texto lateral */
+    .image-text img {
+      width: 45%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-text img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Foto inicial -->
+  <div class="full-image">
+    <img src="foto1.jpeg" alt="Imagen principal">
+    <p class="caption">Hola amor, he creado esta página para pedirte perdon y poder seguir juntos</p>
+  </div>
+
+  <!-- Secciones con foto + texto -->
+  <div class="section image-text">
+    <img src="foto2.jpeg" alt="Imagen 2">
+    <div class="text">
+      <h2>Arrepentimiento</h2>
+      <p>
+        Estoy muy triste de lo que pasó ayer y de los numerosos errores que he ido
+	cometiendo estos días. En ningún momento quería hacer daño o que te cansaras de mi.
+	Me has dicho que en el fondo sabes que tengo buen corazón y que soy capaz de demostrarlo,
+	eso quiero hacer...
+      </p>
+    </div>
+  </div>
+
+  <div class="section image-text">
+    <img src="foto3.jpeg" alt="Imagen 3">
+    <div class="text">
+      <h2>Cambio</h2>
+      <p>
+        Se que a veces es complicado de entender mi forma de actuar ante las cosas, se que
+	no soy buen novio a veces y que me traicionan las formas y lo que demuestro.
+	Quiero cambiar todo eso, quiero demostrarte de una vez que eres la mujer de mi vida
+	y que no tengo ojos para otra persona en este mundo que no sea para ti.
+	Ultimamente he estado cerrado en la tristeza y en la soledad de las amistades, pero
+	me he dejado a un lado algo mas importante que es la relación que tengo contigo,
+	sobretodo contando con que estando juntos en Almería, nos ha ido genial. Pero eso
+	no significa que deba seguir luchando por nosotros y muchas veces a mi contra.
+      </p>
+    </div>
+  </div>
+
+<div class="section image-text">
+    <img src="foto4.jpeg" alt="Imagen 3">
+    <div class="text">
+      <h2>Promesa</h2>
+      <p>
+        Te prometo que voy a estar para ti pase lo que pase, esté como esté y da igual cuando ocurra.
+	Quiero que veas que soy el hombre que te merece y jamás voy a cansarme de querer demostrartelo,
+	por muchos baches que tengamos, mi corazón no duda ni un segundo en nosotros o en ti. Estoy orgulloso de ti,
+	de todo lo capaz que estás siendo de lidiar con las situaciones y seguir para adelante. Hoy te estás demostrando
+	lo fuerte que eres a pesar de todas las veces que me has dicho que no lo eres. Ahora me toca a mi poner
+	de mi parte y apoyarte en todo y estar ahí, y creeme que voy a hacerlo, lo tengo más claro que nunca, no voy
+	a malgastar esta oportunidad que me has dado, aunque sea la última, no van a hacer falta ninguna más.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Foto final -->
+  <div class="full-image">
+    <img src="foto5.jpeg" alt="Imagen final">
+    <p class="caption">Te quiero con todo mi corazón, Clara <3</p>
+  </div>
+
+</body>
+</html>
